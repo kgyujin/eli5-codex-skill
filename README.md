@@ -31,6 +31,20 @@ Swap in any topic — the more concrete the question, the better the picture-exp
 
 ## Installation
 
+### Install with npx
+
+Install without cloning, then update or remove it with `npx skills`. Requires Node.js.
+
+```bash
+npx skills add kgyujin/eli5-codex-skill -g -a claude-code -a codex   # install
+npx skills update -g eli5                                            # update
+npx skills remove -g eli5                                            # remove
+```
+
+`-g` installs into your user folder so every project can use it, and `-a` picks the tools. Leave `-a` out to choose interactively. Don't mix this with the manual install below on the same machine, since both use the same skill folder.
+
+### Manual install
+
 Clone directly into your Codex skills directory:
 
 ```sh
